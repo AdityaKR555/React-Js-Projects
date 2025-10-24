@@ -1,0 +1,89 @@
+/* .container{
+  width: 70vw;
+  height: 75vh;
+  background-color: rgb(15, 15, 15);
+  border-radius: 3rem;
+  /* box-shadow: 5px 5px 25px green; *
+  
+  padding: 1.5rem;
+  overflow: hidden;
+} */
+
+.container{
+  width: 70vw;
+  height: 75vh;
+  background-color: rgb(15, 15, 15);
+  border-radius: 3rem;
+  /* box-shadow is now handled dynamically in JSX */
+  padding: 1.5rem;
+  overflow: hidden;
+  position: relative; /* Add this */
+  z-index: 1; /* Add this */
+  transition: filter 0.3s ease-in-out; /* Add this for smooth blur */
+}
+
+/* Add this new rule to App.css */
+.blur-background {
+    /* Apply the blur filter to the main container */
+    filter: blur(5px);
+    /* This prevents clicking elements underneath the modal */
+    pointer-events: none; 
+}
+
+.header{
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem 1.8rem 0.2rem 1rem;
+  margin-bottom: 1.2rem;
+  text-shadow: 2px 2px 12px green;
+}
+
+hr{
+  width: 90%;
+  margin: auto;
+  height: 0.01rem;
+  margin-bottom: 1.8rem;
+  border-color: rgb(33, 33, 33);
+}
+
+input{
+  /* width: 37.2rem; */
+  width: 95%;
+  height: 3rem;
+  display: block;
+  margin: auto;
+  border-radius: 2rem;
+  padding-left: 1.5rem;
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.result{
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 1.2rem;
+  color: white;
+  font-weight: 500;
+  gap: 1.5rem;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  height: 50vh;
+  /* padding-bottom: 2rem; */
+  box-sizing: border-box;
+  /* background: red; */
+}
+
+.result::-webkit-scrollbar {
+  display: none;
+}
+
+.result {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
