@@ -5,7 +5,8 @@ import MovieDetail from './components/MovieDetail.jsx';
 import axios from 'axios';
 
 function App() {
-  const API_KEY = process.env.FILM_API_KEY;
+  const API_KEY = import.meta.env.VITE_FILM_API_KEY;
+  
   const [movieName, setMovieName] = useState("");
   const [movies, setMovies] = useState(null);
   const [error, setError] = useState("");

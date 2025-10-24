@@ -7,9 +7,19 @@ function App() {
   const [weather, setWeather] = useState(null);
   const [error, setError] = useState("");
 
-  const API_KEY = process.env.WEATHER_API_KEY;
+  // const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
+  const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
+  console.log("API Key:", API_KEY);
+
 
   const getWeather = async () => {
+
+    if (!city) {
+        setError("Please enter a city name!");
+        setWeather(null);
+        return; // Prevent API call with an empty city
+    }
+
     try{
       const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`);
       setWeather(response.data);
@@ -22,8 +32,8 @@ function App() {
   }
 
   const getTempShadow = () => {
-  if (weather.main.temp < 15) return "5px 5px 25px rgba(0, 170, 255, 0.712)";
-  if (weather.main.temp < 35) return "5px 5px 25px rgba(192, 192, 28, 0.658)";
+  if (weather?.main.temp < 15) return "5px 5px 25px rgba(0, 170, 255, 0.712)";
+  if (weather?.main.temp < 35) return "5px 5px 25px rgba(192, 192, 28, 0.658)";
   return "5px 5px 25px red";
   }
 
