@@ -10,24 +10,27 @@ export const AddTodo = () => {
     const addTodoHandler = (e) => {
         e.preventDefault();
         dispatch(addTodo({text : input}));
-        setInput("");
+        setInput(""); 
     }
 
   return (
-    <form onSubmit={addTodoHandler} className="space-x-3 mt-12">
+    <div style={{width:"100%", padding:"80px 200px 50px",}}>
+      <h1 style={{color:"darkCyan", margin:"1rem", textShadow:"5px 5px 20px gray"}}>Enter New ToDo:</h1>
+    <form onSubmit={addTodoHandler} style={{display:"flex"}}>
       <input
         type="text"
-        className="bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
         placeholder="Enter a Todo..."
         value={input}
         onChange={(e) => setInput(e.target.value)}
+        style={{width:"82rem", height:"4rem", borderRadius:"5rem 0 0 5rem", padding:"1rem 2rem", fontSize:"2rem",}}
       />
       <button
         type="submit"
-        className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+        style={{width:"10rem", height:"4rem", borderRadius:"0 5rem 5rem 0", backgroundColor:"darkCyan",color:"white", padding:"0 .7rem" ,fontSize:"1.5rem", fontWeight:"bold", cursor:"pointer",}}
       >
         Add Todo
       </button>
     </form>
+    </div>
   );
 };
