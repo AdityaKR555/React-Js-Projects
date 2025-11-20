@@ -9,20 +9,21 @@ export const AddTodo = () => {
 
     const addTodoHandler = (e) => {
         e.preventDefault();
+        if(input.trim() === "") return;
         dispatch(addTodo({text : input}));
         setInput(""); 
     }
 
   return (
     <div style={{width:"100%", padding:"80px 200px 50px",}}>
-      <h1 style={{color:"darkCyan", margin:"1rem", textShadow:"5px 5px 20px gray"}}>Enter New ToDo:</h1>
+      <h1 style={{color:"darkCyan", margin:"1rem", textShadow:"5px 5px 20px gray", width:"40rem"}}>Enter New ToDo:</h1>
     <form onSubmit={addTodoHandler} style={{display:"flex"}}>
       <input
         type="text"
         placeholder="Enter a Todo..."
         value={input}
         onChange={(e) => setInput(e.target.value)}
-        style={{width:"82rem", height:"4rem", borderRadius:"5rem 0 0 5rem", padding:"1rem 2rem", fontSize:"2rem",}}
+        style={{width:"80rem", height:"4rem", borderRadius:"5rem 0 0 5rem", padding:"1rem 2rem", fontSize:"1.8rem",}}
       />
       <button
         type="submit"

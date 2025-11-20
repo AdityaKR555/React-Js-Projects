@@ -7,8 +7,6 @@ export const Todos = () => {
   const todos = useSelector((state) => state.todos);
   const dispatch = useDispatch();
 
-  const [isFocused, setIsFocused] = useState(false);
-
   const [editId, setEditId] = useState(null);
   const [editText, setEditText] = useState("");
 
@@ -27,7 +25,9 @@ export const Todos = () => {
               color: "darkCyan",
               margin: "1rem",
               textShadow: "5px 5px 20px gray",
+              width: "40rem",
             }}
+            
           >
             Recent ToDos:
           </h1>
@@ -42,7 +42,7 @@ export const Todos = () => {
                   style={{
                     display: "flex",
                     padding: "1rem",
-                    width: "94%",
+                    width: "90rem",
                     minHeight: "5rem",
                     justifyContent: "space-evenly",
                     borderRadius: "1rem",
@@ -66,9 +66,7 @@ export const Todos = () => {
                       borderRadius: "1rem",
                       padding: "0 1rem",
                       resize: "none",
-                      border: isFocused ? "4px solid green" : "",
                     }}
-                      onFocus={() => setIsFocused(true)}
                   />
                   <button
                     onClick={() => {
@@ -102,7 +100,7 @@ export const Todos = () => {
                   style={{
                     display: "flex",
                     padding: "1rem",
-                    width: "94%",
+                    width: "90rem",
                     minHeight: "5rem",
                     justifyContent: "space-evenly",
                     borderRadius: "1rem",
