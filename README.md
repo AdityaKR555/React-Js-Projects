@@ -57,3 +57,41 @@ An app to search movies using the **OMDb API**. Includes a modal to show detaile
 
 ---
 
+### 9. To-Do App (Context API)  
+A complete to-do list application built using **React Context API** for global state management.  
+
+**Skills used:** React, Context API, useReducer, component structuring, local-storage
+
+---
+
+### 10. UI Design Project  
+A UI-focused project created to practice component-based design and frontend styling.  
+
+**Skills used:** React, component design, TailwindCSS/CSS
+
+---
+
+### 11. To-Do App (Redux Toolkit)  
+A to-do application implemented using **Redux Toolkit**, demonstrating structured global state management with slices and reducers.  
+
+**Skills used:** React, Redux Toolkit, reducers, slices, component-based designing
+
+---
+
+### 13. Simple Notes App  
+A simple notes application where users can create and save notes with titles and descriptions.  
+
+**Skills used:** React, useState, component-level state, tailwind CSS
+
+---
+
+## Features Across Projects
+- Interactive UI with state management  
+- API integration for dynamic data  
+- Practice of hooks: `useState`, `useEffect`, `useReducer`  
+- Global state management (Context API & Redux Toolkit)  
+- Component-based and scalable structure  
+- Clean and responsive design  
+
+---
+
