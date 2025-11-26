@@ -57,9 +57,3 @@ An app to search movies using the **OMDb API**. Includes a modal to show detaile
 
 ---
 
-## Features Across Projects
-- Interactive UI with React state management
-- API integration for dynamic data fetching
-- Component-based architecture
-- Practice of hooks: `useState`, `useEffect`
-- Clean and responsive design
