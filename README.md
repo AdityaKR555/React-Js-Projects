@@ -2,7 +2,7 @@
 
 Welcome to my **React JS Projects** repository! This repo contains a collection of small to medium React projects that I have built to practice and demonstrate my skills in React, JavaScript, and frontend development.  
 
-Currently, there are **7 projects** included:
+Currently, there are **13 projects** included(as of now):
 
 ---
 
