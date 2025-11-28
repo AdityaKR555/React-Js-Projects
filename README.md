@@ -85,6 +85,12 @@ A simple notes application where users can create and save notes with titles and
 
 ---
 
+### 14. Image Gallery Project(Picsum API)
+A simple image gallery app that fetches random images from the Picsum API and displays them in a clean grid layout. Each image card also shows the author’s name, fetched directly from the API response.
+
+**Skills used**: React, useState, useEffect, API calls (axios), conditional rendering, responsive UI with Tailwind CSS
+
+
 ## Features Across Projects
 - Interactive UI with state management  
 - API integration for dynamic data  
