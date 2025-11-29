@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
   const [title, setTitle] = useState("");
@@ -17,6 +17,28 @@ function App() {
       setDetails("");
     }
   };
+
+
+useEffect(() => {
+  const savedNotes = localStorage.getItem("notesData");
+
+  if (savedNotes) {
+    try {
+      setNotes(JSON.parse(savedNotes));
+    } catch (e) {
+      console.error("Invalid JSON in localStorage:", e);
+    }
+  }
+}, []);
+
+
+useEffect(() => {
+  if (notes.length > 0) {
+    localStorage.setItem("notesData", JSON.stringify(notes));
+  }
+}, [notes]);
+
+
 
   const deleteNote = (idx) => {
     let newNotes = [...notes];
