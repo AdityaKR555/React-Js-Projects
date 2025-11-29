@@ -81,7 +81,7 @@ A to-do application implemented using **Redux Toolkit**, demonstrating structure
 ### 13. Simple Notes App  
 A simple notes application where users can create and save notes with titles and descriptions.  
 
-**Skills used:** React, useState, component-level state, tailwind CSS
+**Skills used:** React, useState, component-level state, tailwind CSS, Local Storage
 
 ---
 
