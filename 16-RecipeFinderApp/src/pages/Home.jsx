@@ -8,14 +8,13 @@ const Home = () => {
   const [recipes, setRecipes] = useState(null);
   const [loading, setLoading] = useState(false);
 
-
   const navigate = useNavigate();
 
   const searchItem = async (e) => {
     e.preventDefault();
 
     if (item.trim() === "") return;
-   
+
     setLoading(true);
 
     const response = await axios.get(
@@ -30,7 +29,6 @@ const Home = () => {
   };
 
   return (
-
     <div className="bg-cyan-50 pb-10 min-h-screen">
       {/* .........input.......... */}
       <div>
@@ -61,20 +59,32 @@ const Home = () => {
 
       {/* .........output......... */}
 
-      <div>
-        {loading && <Loader />}
-      </div>
+      <div>{loading && <Loader />}</div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10 px-5">
         {recipes === null && (
-          <p className="text-center text-gray-500 w-[95vw]">
-            Search recipes to begin...
-          </p>
+          <div className="flex flex-col justify-center items-center w-[96vw]">
+            <p className="text-center text-gray-500 w-[95vw]">
+              Search recipes to begin...
+            </p>
+            <img
+              src="../../public/Kitchen appliances-rafiki.svg"
+              alt="kitchen-svg"
+              className="w-[35%]"
+            />
+          </div>
         )}
         {recipes?.length === 0 && (
-          <p className="text-center text-gray-500 w-[95vw]">
-            Try again with Correct Spelling...
-          </p>
+          <div className="flex flex-col justify-center items-center w-[96vw]">
+            <p className="text-center text-gray-500 w-[95vw]">
+              Try again with Correct Spelling...
+            </p>
+            <img
+              src="../../public/Kitchen appliances-rafiki.svg"
+              alt="kitchen-svg"
+              className="w-[35%]"
+            />
+          </div>
         )}
 
         {recipes?.map((recipe) => (
@@ -83,8 +93,14 @@ const Home = () => {
             className="bg-white shadow-md rounded-2xl overflow-hidden cursor-pointer hover:scale-102 duration-300 transotion-all border border-black pt-3"
             onClick={() => navigate(`/recipe/${recipe.idMeal}`)}
           >
-            <img src={recipe.strMealThumb} alt={recipe.strMeal} className="w-[90%] m-auto rounded-2xl border border-black" />
-            <h2 className="text-xl font-bold text-cyan-950 py-3 px-6">{recipe.strMeal}</h2>
+            <img
+              src={recipe.strMealThumb}
+              alt={recipe.strMeal}
+              className="w-[90%] m-auto rounded-2xl border border-black"
+            />
+            <h2 className="text-xl font-bold text-cyan-950 py-3 px-6">
+              {recipe.strMeal}
+            </h2>
           </div>
         ))}
       </div>
