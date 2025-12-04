@@ -100,4 +100,5 @@ A simple image gallery app that fetches random images from the Picsum API and di
 - Clean and responsive design  
 
 ---
+---
 
