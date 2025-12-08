@@ -2,7 +2,7 @@
 
 Welcome to my **React JS Projects** repository! This repo contains a collection of small to medium React projects that I have built to practice and demonstrate my skills in React, JavaScript, and frontend development.  
 
-Currently, there are **14 projects** included(as of now):
+Currently, there are **16 projects** included(as of now):
 
 ---
 
@@ -101,6 +101,16 @@ right now, only homepage is done, will finish the work when get some free time..
 ---
 
 ### 16. Recipe Finder App
+A simple and fast React + Tailwind CSS application to browse recipes, explore categories, and manage favourite dishes.
+This project focuses on a clean UI, smooth navigation using React Router, and full responsiveness.
+
+Includes HomePage, Categories Page and Favourite's Page.
+
+**Skills used:** React, react-router-dom, Axios, Tailwind CSS
+
+
+---
+
 
 ## Features Across Projects
 - Interactive UI with state management  
@@ -110,6 +120,7 @@ right now, only homepage is done, will finish the work when get some free time..
 - Component-based and scalable structure  
 - Clean and responsive design  
 
+
 ---
----
+
 
