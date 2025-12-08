@@ -88,8 +88,19 @@ A simple notes application where users can create and save notes with titles and
 ### 14. Image Gallery Project(Picsum API)
 A simple image gallery app that fetches random images from the Picsum API and displays them in a clean grid layout. Each image card also shows the author’s name, fetched directly from the API response.
 
-**Skills used**: React, useState, useEffect, API calls (axios), conditional rendering, responsive UI with Tailwind CSS
+**Skills used:** React, useState, useEffect, API calls (axios), conditional rendering, responsive UI with Tailwind CSS
 
+---
+
+### 15. K-72 Clone
+A UI clone of K72's website containing homepage, work and agency page
+right now, only homepage is done, will finish the work when get some free time...
+
+**Skills used:** React, React-router-dom, components based designing, gsap(for animations), tailwind CSS
+
+---
+
+### 16. Recipe Finder App
 
 ## Features Across Projects
 - Interactive UI with state management  
