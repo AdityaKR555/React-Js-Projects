@@ -119,6 +119,7 @@ Includes HomePage, Categories Page and Favourite's Page.
 - Global state management (Context API & Redux Toolkit)  
 - Component-based and scalable structure  
 - Clean and responsive design  
+- Smooth Routing using React-Router-Dom
 
 
 ---
