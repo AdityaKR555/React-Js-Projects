@@ -107,6 +107,7 @@ This project focuses on a clean UI, smooth navigation using React Router, and fu
 Includes HomePage, Categories Page and Favourite's Page.
 
 **Skills used:** React, react-router-dom, Axios, Tailwind CSS
+*View Live:* https://recipee-finderr.pages.dev/
 
 
 ---
