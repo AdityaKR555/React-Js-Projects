@@ -7,7 +7,8 @@ function useQuote(trigger) {
     useEffect(() => {
         fetch("https://dummyjson.com/quotes/random")
         .then(res => res.json())
-        .then(res => setData(res.quote));
+        .then(res => setData(res.quote))
+        .catch(() => setData("Failed to load quote"));
     }, [trigger])
 
   
