@@ -108,8 +108,13 @@ Includes HomePage, Categories Page and Favourite's Page.
 
 **Skills used:** React, react-router-dom, Axios, Tailwind CSS
 
-
 ---
+
+### 17. Notes And Quotes
+This project is for revison purpose,
+It's a simple React App that lets you add and delete notes(with title and details), and displays a random quote using api when the app loads and a new note is added.
+
+**Skills used:** React, api(fetch)
 
 
 ## Features Across Projects
