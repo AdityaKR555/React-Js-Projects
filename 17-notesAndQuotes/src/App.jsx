@@ -9,10 +9,13 @@ function App() {
   const [trigger, setTrigger] = useState(0);
   const quote = useQuote(trigger);
 
+  const [isLoaded, setIsLoaded] = useState(false);
+
   const addNotes = (e) => {
     e.preventDefault();
     if(title.trim() === '' && detail.trim() === '') alert('Both fields cannot be empty');
     else{
+      // setNote(prev => [...prev, { title, detail }]);
       let newNotes = [...note];
       newNotes.push({title, detail});
       setNote(newNotes);
@@ -23,11 +26,33 @@ function App() {
   }
 
   const deleteNotes = (index) => {
-    let newNotes = [...note];
-    newNotes.splice(index, 1);
-    setNote(newNotes);
+    // let newNotes = [...note];
+    // newNotes.splice(index, 1);
+    // setNote(newNotes);
+
+    setNote(note.filter((_, i) => i !== index));
   }
+
   
+
+  useEffect(() => {
+  const savedNotes = localStorage.getItem("notes");
+
+  if (savedNotes) {
+    try {
+      setNote(JSON.parse(savedNotes));
+    } catch (e) {
+      console.error("Invalid JSON in localStorage:", e);
+    }
+  }
+  setIsLoaded(true);
+}, []);
+
+
+useEffect(() => {
+  if (!isLoaded) return;
+  localStorage.setItem("notes", JSON.stringify(note));
+}, [note, isLoaded]);
 
   return (
     <>
