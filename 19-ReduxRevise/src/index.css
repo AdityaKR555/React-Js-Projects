@@ -1,0 +1,52 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #3c0000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+h1{
+  color: wheat;
+  font-size: 4rem;
+  display: block;
+}
+
+div{
+  display: flex; 
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+button, input{
+  padding: 7px 14px;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+button:first-child{
+  background-color: #00ff00;
+  border: none;
+}
+
+button:last-child{
+  background-color: #ff0000;
+  border: none;
+}
+
+button:nth-child(2){
+  background-color: #0000ff;
+  border: none;
+}
