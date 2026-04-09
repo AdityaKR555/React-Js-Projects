@@ -124,6 +124,13 @@ It's a react app that lets users add task, edit and delete, and mark it complete
 
 ***Skills used:** React, react-router-dom(has simple and nested routing aswell), context-api(used to toggle theme)
 
+---
+
+### 19. Redux Revise
+Made to revise the concepts of redux-toolkit, Nothing interesting to know about.
+
+---
+
 
 ## Features Across Projects
 - Interactive UI with state management  
