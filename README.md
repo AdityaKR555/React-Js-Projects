@@ -116,6 +116,14 @@ It's a simple React App that lets you add and delete notes(with title and detail
 
 **Skills used:** React, api(fetch)
 
+--- 
+
+### 18. Tic Tac Task
+Again, made for revision purpose,
+It's a react app that lets users add task, edit and delete, and mark it complete and can also see the completed tasks in completed task, along with task manager, Users can enjoy playing Tic Tac Toe - its a multiplayer 1v1 game.
+
+***Skills used:** React, react-router-dom(has simple and nested routing aswell), context-api(used to toggle theme)
+
 
 ## Features Across Projects
 - Interactive UI with state management  
